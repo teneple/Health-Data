@@ -1,4 +1,4 @@
-﻿cmake_minimum_required (VERSION 3.10)
+﻿cmake_minimum_required(VERSION 3.20)
 
 # Enable Hot Reload for MSVC compilers if supported.
 if (POLICY CMP0141)
@@ -8,8 +8,14 @@ endif()
 
 project ("Health-Data")
 
-add_executable (HealthData "src/main.cpp" "src/healthdatafcts.cpp" "include/includes.h" "include/healthdatafcts.h")
+set(MISC_FILES
+    .gitignore
+    CMakePresets.json
+    LICENSE
+    README.md
+)
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp include/*.h)
+add_executable(HealthData ${SOURCES} ${MISC_FILES})
+source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${SOURCES})
 
-if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET HealthData PROPERTY CXX_STANDARD 23)
-endif()
+set_property(TARGET HealthData PROPERTY CXX_STANDARD 23)
