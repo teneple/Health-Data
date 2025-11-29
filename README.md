@@ -1,7 +1,11 @@
-# Health-Data
+# Health-Data Overview
 A simple 'Hello-World' like project that calculates the user's age in days and minutes. As well as calculates the user's total number of heartbeats in their current lifetime.
 This is a starter CMake console project that is cross-platform on Windows, Linux and macOS made using MSVC.
 It currently does not include error handling such as invalid inputs.
+
+Example:
+
+<img width="850" height="240" alt="image" src="https://github.com/user-attachments/assets/4cadd339-c60b-4aed-be67-10f1367350f1" />
 
 Project structure:
 ```
@@ -27,6 +31,6 @@ This code was made using C++23 features which requires CMake version 3.20+ and y
 3. Run CMake: `cmake ..`
 4. Build with CMake: `cmake --build .`
 5. If you are on Windows:
-   - If you compiled with MSVC, then run the Debug executable: `.\Debug\HealthData.exe`. Alternatively you can open the Visual Studio solution file with Visual Studio: `Health-Data.sln` and run from the IDE.
+   - If CMake compiled with MSVC, then run the Debug executable: `.\Debug\HealthData.exe`. Alternatively you can open the Visual Studio solution file with Visual Studio: `Health-Data.sln` and run from the IDE.
    - Otherwise, run the executable: `.\HealthData.exe`.
 6. Otherwise, run the executable: `./HealthData`.
