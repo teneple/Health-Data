@@ -1,16 +1,16 @@
 # Health-Data
 A simple 'Hello-World' like project that calculates the user's age in days and minutes. As well as calculates the user's total number of heartbeats in their current lifetime.
-This is a starter CMake project that is cross-platform on Windows, Linux and macOS made using MSVC.
-It does not include error handling such as invalid inputs.
+This is a starter CMake console project that is cross-platform on Windows, Linux and macOS made using MSVC.
+It currently does not include error handling such as invalid inputs.
 
 Project structure:
-```bash
+```
 Health-Data/
 ├── include/                - Header files
 │   └── healthdatafcts.h    - Health Data function declarations
 │   └── includes.h          - Precompiled header file
 ├── src/                    - Source files
-│   ├── healthdatafcts.h    - Health Data calculation logic
+│   ├── healthdatafcts.cpp    - Health Data calculation logic
 │   └── main.cpp            - Entry point of the program
 ├── CMakeLists.txt          - Build configuration
 ├── LICENSE                 - Project licence
