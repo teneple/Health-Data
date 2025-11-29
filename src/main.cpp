@@ -8,8 +8,10 @@ int main() {
     std::uint16_t userAgeYears{ 0 };
     std::cin >> userAgeYears;
 
+    std::locale::global(std::locale("")); // For localised formatting
+
     const std::uint32_t userAgeDays{ ageYearsToDays(userAgeYears) };
-    std::println("You are {:L} days old.", userAgeDays); // :L = localised formatting inserting commas (still not available in MSVC)
+    std::println("You are {:L} days old.", userAgeDays); // :L = localised formatting inserting commas
 
     const std::uint32_t userAgeMins{ ageDaysToMins(userAgeDays) };
     std::println("You are {:L} minutes old.", userAgeMins);

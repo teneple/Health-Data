@@ -17,5 +17,5 @@ std::uint32_t ageDaysToMins(const std::uint32_t ageDays) {
 std::uint64_t ageMinsToHeartBeats(const std::uint32_t ageMins) {
     const std::uint16_t avgBeatsPerMin{ 72 }; // Using 72 as average
 
-    return static_cast<std::uint64_t>(ageMins * avgBeatsPerMin);
+    return static_cast<std::uint64_t>(ageMins) * avgBeatsPerMin;
 }
