@@ -5,9 +5,12 @@ int main() {
     std::println("-----------------------------------");
 
     std::print("Enter your age in years: ");
-    std::uint16_t userAgeYears = 0;
+    std::uint16_t userAgeYears{ 0 };
     std::cin >> userAgeYears;
 
-    std::uint32_t userAgeDays = ageYearsToDays(userAgeYears);
+    const std::uint32_t userAgeDays{ ageYearsToDays(userAgeYears) };
     std::println("You are {:L} days old.", userAgeDays); // :L = localised formatting (still not available in MSVC)
+
+    const std::uint32_t userAgeMins{ ageDaysToMins(userAgeDays) };
+    std::println("You are {:L} minutes old.", userAgeMins);
 }
