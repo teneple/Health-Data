@@ -10,7 +10,6 @@ project ("Health-Data")
 
 set(MISC_FILES
     .gitignore
-    CMakePresets.json
     LICENSE
     README.md
 )
