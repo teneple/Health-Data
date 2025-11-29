@@ -16,4 +16,7 @@ int main() {
 
     const std::uint64_t totalHeartBeats{ ageMinsToHeartBeats(userAgeMins) };
     std::println("Your heart has beat {:L} times.", totalHeartBeats);
+
+    std::println("-----------------------------------");
+    std::println("The End!");
 }
