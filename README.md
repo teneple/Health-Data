@@ -10,7 +10,7 @@ Health-Data/
 │   └── healthdatafcts.h    - Health Data function declarations
 │   └── includes.h          - Precompiled header file
 ├── src/                    - Source files
-│   ├── healthdatafcts.cpp    - Health Data calculation logic
+│   ├── healthdatafcts.cpp  - Health Data calculation logic
 │   └── main.cpp            - Entry point of the program
 ├── CMakeLists.txt          - Build configuration
 ├── LICENSE                 - Project licence
