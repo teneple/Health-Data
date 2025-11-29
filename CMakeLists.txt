@@ -8,7 +8,7 @@ endif()
 
 project ("Health-Data")
 
-add_executable (HealthData "src/main.cpp" "include/main.h")
+add_executable (HealthData "src/main.cpp" "src/healthdatafcts.cpp" "include/includes.h" "include/healthdatafcts.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET HealthData PROPERTY CXX_STANDARD 23)
